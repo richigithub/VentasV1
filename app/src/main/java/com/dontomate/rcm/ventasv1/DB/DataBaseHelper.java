@@ -29,7 +29,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     public static final String COL_TOTALP = "TOTALP";
     public static final String COL_ABONO = "ABONO";
     public static final String COL_SALDO = "SALDO";
-    public static final String COL_DAN = "DAN";
+    public static final String COL_DANI = "DANI";
     public static final String COL_RICHARD = "RICHARD";
 
     //Database information
@@ -54,7 +54,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
                                                 + COL_TOTALP + " REAL, "
                                                 +COL_ABONO + " REAL, "
                                                 +COL_SALDO + " REAL, "
-                                                +COL_DAN +" INTEGER, "
+                                                +COL_DANI +" INTEGER, "
                                                 +COL_RICHARD +" INTEGER);";
     public DataBaseHelper(Context context){
         super(context, DB_NAME, null,DB_VERSION);
