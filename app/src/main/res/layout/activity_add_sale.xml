@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/nombre_cliente_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="ingrese cliente">
+    <requestFocus />
+    </EditText>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Ingrese datos"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:background="@color/colorPrimary"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Cantidad de grueso"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/cantidad_grueso_et"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:ems="20"
+            android:gravity="center_horizontal"
+            android:hint="2"
+
+            android:inputType="number" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Precio Grueso"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/precio_grueso_et"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:ems="20"
+            android:gravity="center_horizontal"
+            android:hint="$35000,00"
+            android:inputType="number" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Cantidad de parejo"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/cantidad_parejo_et"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:ems="20"
+            android:gravity="center_horizontal"
+            android:hint="3"
+            android:inputType="number" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Precio parejo"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/precio_parejo_et"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:ems="20"
+            android:gravity="center_horizontal"
+            android:hint="$25000,00"
+            android:inputType="number" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Cantidad de Riche"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/cantidad_riche_et"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:ems="20"
+            android:gravity="center_horizontal"
+            android:hint="3"
+            android:inputType="number" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Precio riche"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/precio_Riche_et"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:ems="20"
+            android:gravity="center_horizontal"
+            android:hint="$15000,00"
+            android:inputType="number" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Total"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:background="@color/colorPrimary"/>
+
+        <EditText
+            android:id="@+id/total_et"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:ems="20"
+            android:hint="$190000,00"
+            android:inputType="number" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Abono"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:background="@color/verdePrimary"/>
+
+        <EditText
+            android:id="@+id/Abono_et"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:ems="20"
+            android:hint="$190000,00"
+            android:inputType="number" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Saldo"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:background="@color/rojoPrimary"/>
+
+        <EditText
+            android:id="@+id/Saldo_et"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:ems="20"
+            android:hint="$190000,00"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_guardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:visibility="visible"
+        app:backgroundTint="@android:color/white"
+        app:fabSize="normal"
+        app:srcCompat="@android:drawable/ic_menu_save" />
+
+</LinearLayout>
