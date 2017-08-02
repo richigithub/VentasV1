@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+  <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="20dp">
 
-    <EditText
+        <EditText
         android:id="@+id/nombre_cliente_et"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
+        android:ems="8"
         android:hint="ingrese cliente">
     <requestFocus />
     </EditText>
@@ -24,6 +29,7 @@
         android:textAlignment="center"
         android:textColor="@android:color/background_light"
         android:background="@color/colorPrimary"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -42,7 +48,6 @@
             android:ems="20"
             android:gravity="center_horizontal"
             android:hint="2"
-
             android:inputType="number" />
     </LinearLayout>
     <LinearLayout
@@ -188,6 +193,7 @@
             android:ems="20"
             android:hint="$190000,00"
             android:inputType="number" />
+
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -210,16 +216,70 @@
             android:ems="20"
             android:hint="$190000,00"
             android:inputType="number" />
+
     </LinearLayout>
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab_guardar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:visibility="visible"
-        app:backgroundTint="@android:color/white"
-        app:fabSize="normal"
-        app:srcCompat="@android:drawable/ic_menu_save" />
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="61dp"
+          android:orientation="horizontal">
 
-</LinearLayout>
+          <CheckBox
+              android:id="@+id/checkBox"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:textAlignment="center"
+              android:text="¿Dejas Canastillas?" />
+
+          <TextView
+              android:id="@+id/textView"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="0.41"
+              android:text="Número de canastillas"
+              android:visibility="visible"
+              android:textAlignment="center"/>
+
+          <EditText
+              android:id="@+id/editText"
+              android:layout_width="80dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="0.41"
+              android:ems="10"
+              android:inputType="number"
+              android:visibility="visible"
+              android:hint="2"
+              android:textAlignment="center"/>
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:padding="@dimen/fab_margin"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:orientation="horizontal">
+
+          <Button
+              android:id="@+id/btn_calcular"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center|right"
+              android:layout_marginBottom="@dimen/fab_margin"
+              android:layout_weight="1"
+              android:text="Calcular"
+              android:textColorHint="@color/colorPrimaryDark" />
+          <Button
+          android:id="@+id/btn_agregar_venta"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center|right"
+          android:layout_marginBottom="@dimen/fab_margin"
+          android:layout_weight="1"
+          android:text="Agregar venta"
+          android:textColorHint="@color/colorPrimaryDark" />
+      </LinearLayout>
+
+  </LinearLayout>
+</ScrollView>
